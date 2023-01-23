@@ -1,0 +1,22 @@
+<div id="cartItemContainer">
+  <a routerLink="/food/{{ item.food.id }}">
+    <img id="cartItemImg" [src]="item.food.imgUrl" alt="" />
+  </a>
+  <div id="cartItemDesc">
+    <div id="cartItemNameQuantity">
+      {{ item.quantity }} x {{ item.food.name }}
+    </div>
+    <div id="cartItemPrice">
+      {{ item.food.price * item.quantity | currency : "" : "symbol-narrow" }}
+    </div>
+  </div>
+  <button id="cartItemIncrease" (click)="increaseItem()">
+    <fa-icon [icon]="faPlus"></fa-icon>
+  </button>
+  <button id="cartItemDecrease" (click)="decreaseItem()">
+    <fa-icon [icon]="faMinus"></fa-icon>
+  </button>
+  <button id="cartItemRemove" (click)="removeItem()">
+    <fa-icon [icon]="faRemove"></fa-icon>
+  </button>
+</div>

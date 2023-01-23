@@ -1,0 +1,18 @@
+<div id="cartPageContainer" *ngIf="cart.items.length; else empty">
+  <div id="cartItems">
+    <app-cart-item-horizontal
+      *ngFor="let item of cart.items"
+      [item]="item"
+      (cartChangeQuantity)="changeCartQuantity($event)"
+    ></app-cart-item-horizontal>
+  </div>
+  <div id="cartRightContainer">
+    Total price: <br />
+    <div id="cartTotalPrice">
+      {{ cart.totalPrice | currency : "" : "symbol-narrow" }}
+    </div>
+    <button>Buy</button>
+  </div>
+</div>
+
+<ng-template #empty><div id="emptyCart">Your cart is empty!</div> </ng-template>

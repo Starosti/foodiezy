@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap");
+
+* {
+  --main-accent: #3b0404 /* #2E043B */;
+  --header-background: #ff4e4e /* #C349E7 */;
+  --main-background: #f7b5b5 /* #E6B5F7 */;
+  --main-unactive: #935b5b /* #E6B5F7 */;
+  --light-background: #ffeeee /* #E6B5F7 */;
+  --lighty-background: #fcd9d9 /* #E6B5F7 */;
+  --highlight-color: var(--header-background);
+  --decrease-color: #df2b2b;
+  --increase-color: #2bdf43;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: var(--main-background);
+}

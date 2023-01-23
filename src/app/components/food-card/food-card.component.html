@@ -1,0 +1,22 @@
+<div class="notFoundFood viaSearch" *ngIf="searchTerm && foods.length === 0">
+  We couldn't find {{ searchTerm }} <fa-icon [icon]="faFaceFrown"></fa-icon
+  ><br />Well, maybe next time.
+</div>
+<div class="notFoundFood viaTag" *ngIf="selectedTag && foods.length === 0">
+  We couldn't find {{ selectedTag }} <fa-icon [icon]="faFaceFrown"></fa-icon
+  ><br />Well, maybe next time.
+</div>
+<ul class="foodImages">
+  <li *ngFor="let food of foods; let i = index">
+    <a class="foodDetails" routerLink="/food/{{ food.id }}">
+      <div class="imgWrapper"> <img class="foodImg" src="{{ food.imgUrl }}" alt="" /></div>
+      <div class="description">
+        <div class="descriptionText">        <span class="descriptionFoodName">{{ food.name }}</span>
+        <span class="price">{{
+          food.price | currency : "" : "symbol-narrow"
+        }}</span></div>
+      </div>
+    </a>
+    <app-tags [tags]="food.tags"></app-tags>
+  </li>
+</ul>

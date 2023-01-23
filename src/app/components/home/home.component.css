@@ -1,0 +1,57 @@
+.homeContainer::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  content: "";
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      var(--main-background)
+    ),
+    url("../../../assets/title-background.jpg");
+  background-size: cover;
+  background-color: var(--main-background);
+  filter: blur(5px) opacity(30%);
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#title {
+  padding: 2.5em;
+}
+
+.mainTitle {
+  font-size: 3em;
+}
+.subTitle {
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 0.2em;
+}
+
+.slide {
+  animation: 1s ease-out 0s slideFromLeft;
+}
+
+.searchBar {
+  margin-top: 1em;
+}
+
+.highlight {
+  font-weight: 800;
+  color: var(--highlight-color);
+  text-decoration: 0.1em solid var(--highlight-color) underline;
+}
+
+.tagText {
+  font-weight: 200;
+  font-size: 2em;
+}

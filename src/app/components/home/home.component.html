@@ -1,0 +1,19 @@
+<div class="homeContainer">
+  <div id="title">
+    <h1 class="mainTitle">Get the food that you are craving.</h1>
+    <h3 class="subTitle">
+      <span class="highlight">Right now.</span>
+    </h3>
+    <div class="searchBar">
+      <app-search></app-search>
+      <app-selected-tag-display
+        [selectedTag]="selectedTag"
+      ></app-selected-tag-display>
+    </div>
+  </div>
+  <app-food-card
+    [foods]="foods"
+    [searchTerm]="searchTerm"
+    [selectedTag]="selectedTag"
+  ></app-food-card>
+</div>

@@ -1,0 +1,16 @@
+.selectedTag {
+  border: 1px solid var(--main-accent);
+  border-radius: 1em;
+  padding: 0.3em 0.5em;
+  position: absolute;
+  margin-top: 0.5em;
+  color: var(--main-accent);
+  background-color: var(--main-background);
+}
+.selectedTag:hover {
+  filter: brightness(110%);
+  transform: scale(105%);
+}
+.close {
+  color: red;
+}

@@ -1,0 +1,52 @@
+input {
+  padding: 0.5em;
+  width: 20em;
+  background-color: var(--main-background);
+  color: var(--main-accent);
+  border: 2px solid var(--main-accent);
+  border-right: none;
+  border-radius: 0.5em 0 0 0.5em;
+}
+
+input::placeholder {
+  color: black;
+}
+
+input:focus {
+  outline: none;
+  filter: brightness(120%);
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5em 0.5em;
+  border: 2px solid var(--main-accent);
+}
+
+.search {
+  cursor: pointer;
+  padding: 0.5em 0.5em;
+  background-color: var(--main-accent);
+  color: var(--main-background);
+  border: 2px solid var(--main-accent);
+  border-left: none;
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+.clear {
+  padding: 0.5em 0.5em;
+  content: "";
+  background-color: whitesmoke;
+  border-left: none;
+  border-right: none;
+}
+
+button:hover {
+  filter: brightness(120%);
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+    width: 15em;
+  }
+}

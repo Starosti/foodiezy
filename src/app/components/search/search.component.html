@@ -1,0 +1,13 @@
+<div class="searchBar">
+  <input
+    id="searchInput"
+    type="text"
+    placeholder="Search for your favorite food!"
+    (change)="search()"
+    [(ngModel)]="searchTerm"
+  />
+  <button class="clear" (click)="clear()">
+    <fa-icon [icon]="faXmark"></fa-icon>
+  </button>
+  <button class="search" (click)="search()">Search</button>
+</div>

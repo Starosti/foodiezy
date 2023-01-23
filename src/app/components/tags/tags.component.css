@@ -1,0 +1,27 @@
+.tags {
+  display: flex;
+  white-space: nowrap;
+  color: var(--main-accent);
+  width: var(--food-img-width);
+  min-height: 2.5em;
+
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--light-background) var(--lighty-background);
+  scroll-behavior: smooth;
+}
+.tag {
+  font-weight: 400;
+  color: var(--main-accent);
+  display: inline-block;
+  margin: 0.3em;
+  padding: 0.2em;
+  background: var(--main-background);
+  border: 1px solid var(--main-accent);
+  border-radius: 0.5em;
+}
+.tag:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+  transform: scale(105%);
+}

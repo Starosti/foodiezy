@@ -1,0 +1,23 @@
+<div id="foodContainer" *ngIf="food">
+  <img id="foodImg" [src]="food.imgUrl" [alt]="food.name" />
+  <div id="foodDetails">
+    <div id="foodStats">
+      <h1 id="foodName">{{ food.name }}</h1>
+      <div *ngIf="food.tags.length !== 0" id="foodTags">
+        Tags:
+        <app-tags [tags]="food.tags"></app-tags>
+      </div>
+    </div>
+    <div id="foodPriceAndOrderContainer">
+      <div id="foodPriceAndOrder">
+        <div id="foodPrice">
+          {{ food.price | currency : "" : "symbol-narrow" }}
+        </div>
+        <button id="foodOrderButton" (click)="addToCart($event)">
+          Add to cart
+        </button>
+      </div>
+      <div id="foodInCart" *ngIf="inCart">In cart:{{ inCart.quantity }}</div>
+    </div>
+  </div>
+</div>
