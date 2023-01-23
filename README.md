@@ -1,6 +1,9 @@
-# Frontend
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
+# Foodiezy
+A demo frontend application for a food ordering app, made with Angular v15 - CSS.
+Currently, does not have any (mock) post-purchase tracking or login features.
+![Screenshot 2023-01-23 at 22-29-10 Foodiezy](https://user-images.githubusercontent.com/46249941/214157326-dbf2802f-5b09-4d06-a9c7-90528ba678a4.png)
+![Screenshot 2023-01-23 at 22-29-30 Foodiezy](https://user-images.githubusercontent.com/46249941/214157368-ee27a25f-7476-4707-bac0-c7dff17c3821.png)
+![Screenshot 2023-01-23 at 22-29-59 Foodiezy](https://user-images.githubusercontent.com/46249941/214157380-8f08578a-a5ee-4196-8b7c-6e50c46fab04.png)
 
 ## Development server
 
@@ -13,14 +16,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
