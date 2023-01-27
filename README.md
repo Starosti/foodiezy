@@ -1,6 +1,6 @@
 # Foodiezy
 A demo frontend application for a food ordering app, made with Angular v15 - CSS.
-Currently, does not have any (mock) post-purchase tracking or login features.
+Currently, does not have any (even as a mock) post-purchase order tracking or login features.
 ![Screenshot 2023-01-23 at 22-29-10 Foodiezy](https://user-images.githubusercontent.com/46249941/214157326-dbf2802f-5b09-4d06-a9c7-90528ba678a4.png)
 ![Screenshot 2023-01-23 at 22-29-30 Foodiezy](https://user-images.githubusercontent.com/46249941/214157368-ee27a25f-7476-4707-bac0-c7dff17c3821.png)
 ![Screenshot 2023-01-23 at 22-29-59 Foodiezy](https://user-images.githubusercontent.com/46249941/214157380-8f08578a-a5ee-4196-8b7c-6e50c46fab04.png)
