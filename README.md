@@ -1,5 +1,6 @@
 # Foodiezy
 Check out hosted demo at https://foodiezyapp.netlify.app/
+
 A demo frontend application for a food ordering app, made with Angular v15 - CSS.
 Currently, does not have any (even as a mock) post-purchase order tracking or login features.
 ![Screenshot 2023-01-23 at 22-29-10 Foodiezy](https://user-images.githubusercontent.com/46249941/214157326-dbf2802f-5b09-4d06-a9c7-90528ba678a4.png)
